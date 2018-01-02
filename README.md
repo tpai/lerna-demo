@@ -10,13 +10,13 @@ Install Lerna
 npm i -g lerna
 ```
 
-Install dependencies among all projects
+Install dependencies among all packages
 
 ```
 lerna bootstrap
 ```
 
-Build packages
+Build distribution files
 
 ```
 lerna build
@@ -24,7 +24,7 @@ lerna build
 
 ## Usage
 
-Run Demo
+Run Demo#1 - Import CommonJS and ES module
 
 ```
 node package/core/index.js
@@ -34,4 +34,28 @@ This is core function.
 This is ES module.
 This is CommonJS module.
 */
+```
+
+Run Demo#2 - Shared components (create-react-app)
+
+```
+// webpack watch
+cd packages/shared-components \
+yarn start
+
+// run web app
+cd packages/react-app \
+yarn start
+```
+
+Run Demo#3 - Shared components (next.js)
+
+```
+// webpack watch
+cd packages/shared-components \
+yarn start
+
+// run web app
+cd packages/nextjs-app \
+yarn start
 ```
