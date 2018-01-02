@@ -16,7 +16,15 @@ Install dependencies among all projects
 lerna bootstrap
 ```
 
-## Run Demo
+Build packages
+
+```
+lerna build
+```
+
+## Usage
+
+Run Demo
 
 ```
 node package/core/index.js
