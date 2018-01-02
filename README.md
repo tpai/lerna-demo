@@ -19,7 +19,7 @@ lerna bootstrap
 Build distribution files
 
 ```
-lerna build
+lerna run build
 ```
 
 ## Usage
