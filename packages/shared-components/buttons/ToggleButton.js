@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
-import Button from './Button';
+import React, { useCallback, useState } from "react";
+import Button from "./Button";
 
-export default class extends Component {
-  constructor() {
-    super();
-    this.state = { clicked: false };
-  }
-  _onButtonClick = () => {
-    this.setState(({ clicked }) => ({ clicked: !clicked }));
-  }
-  render() {
-    const { clicked } = this.state;
-    return (<Button onClick={this._onButtonClick}>{clicked ? 'Clicked' : 'One Click Button'}</Button>);
-  }
+function ToggleButton() {
+  const [clicked, setClicked] = useState(false);
+  const handleClick = useCallback(() => {
+    setClicked((v) => !v);
+  }, []);
+  return (
+    <Button onClick={handleClick}>
+      {clicked ? "Clicked" : "One Click Button"}
+    </Button>
+  );
 }
+
+export default ToggleButton;

@@ -1,1 +1,1 @@
-export default () => 'This is ES module.'
+export default () => "This is ES module.";

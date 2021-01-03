@@ -1,7 +1,2 @@
-import AlertButton from './buttons/AlertButton';
-import ToggleButton from './buttons/ToggleButton';
-
-export {
-  AlertButton,
-  ToggleButton
-};
+export { default as AlertButton } from './buttons/AlertButton';
+export { default as ToggleButton } from './buttons/ToggleButton';

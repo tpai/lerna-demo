@@ -1,61 +1,42 @@
 # Lerna Demo
 
-This is demo for managing Javascript projects with Lerna.
+Mono javascript projects
 
 ## Prerequisites
-
-Install Lerna
-
-```
-npm i -g lerna
-```
 
 Install dependencies among all packages
 
 ```
-lerna bootstrap
+yarn
 ```
 
-Build distribution files
+Run build script for all mono repos
 
 ```
-lerna run build
+yarn build
 ```
 
 ## Usage
 
 Run Demo#1 - Import CommonJS and ES module
 
-```
-node package/core/index.js
+```sh
+node packages/node-app/index.js
 
-/* It should output:
-This is core function.
-This is ES module.
-This is CommonJS module.
-*/
+# It should output:
+#   This is core function.
+#   This is ES module.
+#   This is CommonJS module.
 ```
 
 Run Demo#2 - Shared components (create-react-app)
 
-```
-// webpack watch
-cd packages/shared-components \
-yarn start
+```sh
+# webpack watch
+cd packages/shared-components && yarn start
 
-// run web app
-cd packages/react-app \
-yarn start
+# run web app
+cd packages/react-app && yarn start
 ```
 
-Run Demo#3 - Shared components (next.js)
-
-```
-// webpack watch
-cd packages/shared-components \
-yarn start
-
-// run web app
-cd packages/nextjs-app \
-yarn start
-```
+Visit http://localhost:3000/ to see the demo.

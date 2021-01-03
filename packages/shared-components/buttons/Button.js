@@ -8,8 +8,8 @@ const Button = styled.button`
   border-radius: 15px;
   outline: none;
   &:hover {
-    color: #AAA;
-    border-color: #AAA;
+    color: #aaa;
+    border-color: #aaa;
   }
 `;
 
