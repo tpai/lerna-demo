@@ -2,10 +2,10 @@
   "name": "shared-components",
   "version": "1.0.0",
   "description": "",
-  "main": "lib/index.js",
+  "main": "./dist/lib/index.js",
   "scripts": {
     "start": "webpack -w",
-    "build": "webpack -p"
+    "build": "NODE_ENV=production webpack"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
@@ -16,6 +16,7 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "styled-components": "^2.4.0",
-    "webpack": "^3.10.0"
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.1"
   }
 }
